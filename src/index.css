@@ -1,0 +1,73 @@
+:root {
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    font-weight: 400;
+    --primary-color: #00d8ff;
+    --secondary-color: #61dafb;
+    --tertiary-color: #21222a;
+    --dark-gray: #33373e;
+}
+
+body {
+    background-color: var(--dark-gray);
+    color: #fff;
+    margin: 0;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    background-color: #21222a;
+    padding: 30px 25px;
+    height: 90px;
+}
+
+.nav__logo-text,
+.nav__title {
+    margin: 0;
+}
+
+.nav__logo-text {
+    margin-right: auto;
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: 1.125rem;
+}
+
+.nav__title {
+    color: #dee8f8;
+    font-weight: 600;
+}
+
+.nav__logo {
+    height: 30px;
+    margin-right: 6px;
+}
+
+/* main */
+main {
+    padding: 57px 27px;
+    background: url("./vite.svg") no-repeat center right;
+    background-size: 300px;
+}
+
+.main__title {
+    margin: 0;
+    font-size: 39px;
+    letter-spacing: -0.05em;
+}
+
+.main__facts {
+    margin-top: 46px;
+    max-width: 400px;
+}
+
+.main__facts > li {
+    line-height: 19px;
+    padding-block: 10px;
+}
+
+.main__facts > li::marker {
+    color: var(--secondary-color);
+    font-size: 1.3rem;
+}
